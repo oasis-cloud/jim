@@ -1,0 +1,39 @@
+<view>
+  <view class="test-item" bindtap="handleSwitchEnv">
+    <view class="item-lf">环境切换（点击切换）</view>
+    <view class="item-ri">当前环境：{{env}}</view>
+  </view>
+  <view class="test-item" bindlongpress="handleCopyOpenId">
+    <view class="item-lf">OpenId（长按复制）</view>
+    <view class="item-ri">{{openId}}</view>
+  </view>
+  <view class="test-item" bindlongpress="handleCopyPin">
+    <view class="item-lf">切换 pin（长按复制，点击切换）</view>
+    <view class="item-ri">{{pin}}</view>
+  </view>
+  <view class="test-item" bindtap="handleScanCode">
+    <view class="item-lf">扫码跳转</view>
+    <view class="item-ri">扫码可跳入体验版或开发版小程序</view>
+  </view>
+  <view class="test-item" bindtap="handleShowH5Modal">
+    <view class="item-lf">跳转 H5</view>
+    <view class="item-ri">跳转指定 H5</view>
+  </view>
+  <view class="test-item" bindtap="handleShowProModal">
+    <view class="item-lf">跳转商详</view>
+    <view class="item-ri">输入 skuId</view>
+  </view>
+  <view class="test-item" bindtap="handleShowMinModal">
+    <view class="item-lf">其他页面</view>
+    <view class="item-ri">主要包含一些落地承接页面</view>
+  </view>
+</view>
+
+<view class="h5-modal" style="display: {{h5ModalShow ? 'flex':'none'}}">
+  <view><textarea bindblur="bindTextAreaBlur" placeholder="{{holder}}"/></view>
+  <view class="btn-w"><button bindtap="handleCloseModal">取消</button><button bindtap="handleGo">打开</button></view>
+</view>
+<view class="h5-modal" style="display: {{minModalShow ? 'flex':'none'}}">
+  <view><textarea bindblur="bindTextAreaBlur" placeholder="{{holder}}"/></view>
+  <view class="btn-w"><button bindtap="handleCloseModal">取消</button><button bindtap="handleGo">打开</button></view>
+</view>

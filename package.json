@@ -1,0 +1,33 @@
+{
+  "name": "jim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "jim": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.14.0"
+  },
+  "dependencies": {
+    "commander": "^8.2.0",
+    "glob": "^7.2.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-purifycss": "^0.2.0",
+    "html-minifier-terser": "^6.0.2",
+    "miniprogram-compiler": "^0.1.3",
+    "miniprogram-exparser": "^2.15.0",
+    "terser": "^5.9.0",
+    "through2": "^4.0.2"
+  },
+  "devDependencies": {
+    "prettier": "2.4.1"
+  }
+}

@@ -1,0 +1,63 @@
+.test-item {
+  position: relative;
+  height: 30rpx;
+  padding: 20rpx 20rpx;
+}
+.item-lf {
+  float: left;
+  font-size: 28rpx;
+}
+.item-ri {
+  float: right;
+  padding-right: 20rpx;
+  font-size: 24rpx;
+  color: hsl(240, 5%, 79%);
+}
+.item-ri::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border: 2rpx solid hsl(240, 5%, 79%);
+  border-bottom-width: 0;
+  border-left-width: 0;
+  right: 20rpx;
+  top: 35rpx;
+  width: 10rpx;
+  height: 10rpx;
+  transform: translateY(-50%) rotate(45deg);
+}
+.h5-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+textarea {
+  border: 1rpx solid #000;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+}
+.btn-w {
+  text-align: center;
+}
+button {
+  background: #ff413f;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10rpx 30rpx;
+  margin-right: 30rpx;
+  font-size: 28rpx;
+}
+
+button:nth-child(1) {
+  background: gray;
+}
